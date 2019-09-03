@@ -6,16 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://rememorymoonlightshadow.github.io">
-  <title>Category: 算法 | Remember</title>
+  <title>Python基础(中) | Remember</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Remember">
-<meta property="og:url" content="https://rememorymoonlightshadow.github.io/categories/算法/index.html">
+  <meta name="description" content="Python运算符Python语言支持以下类型的运算符:  算术运算符 比较(关系)运算符 赋值运算符 逻辑运算符 逻辑运算符 位运算符 成员运算符 身份运算符 运算符优先级">
+<meta name="keywords" content="学习,Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python基础(中)">
+<meta property="og:url" content="https://rememorymoonlightshadow.github.io/2019/09/03/Python基础(中)/index.html">
 <meta property="og:site_name" content="Remember">
+<meta property="og:description" content="Python运算符Python语言支持以下类型的运算符:  算术运算符 比较(关系)运算符 赋值运算符 逻辑运算符 逻辑运算符 位运算符 成员运算符 身份运算符 运算符优先级">
 <meta property="og:locale" content="en|zh-CN|zh-TW">
+<meta property="og:updated_time" content="2019-09-03T03:21:15.119Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Remember">
+<meta name="twitter:title" content="Python基础(中)">
+<meta name="twitter:description" content="Python运算符Python语言支持以下类型的运算符:  算术运算符 比较(关系)运算符 赋值运算符 逻辑运算符 逻辑运算符 位运算符 成员运算符 身份运算符 运算符优先级">
   
     <link rel="alternative" href="/atom.xml" title="Remember" type="application/atom+xml">
   
@@ -197,256 +202,598 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Python基础(中)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/20/有序数组的中位数/" class="archive-article-date">
-        <time datetime="2019-08-19T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	      <a class="archive-article-title" href="/2019/08/20/有序数组的中位数/">有序数组的中位数</a>
-	
+    <h1 class="article-title" itemprop="name">
+      Python基础(中)
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/09/03/Python基础(中)/" class="archive-article-date">
+        <time datetime="2019-09-03T02:25:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">2k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">8分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="Python运算符"><a href="#Python运算符" class="headerlink" title="Python运算符"></a>Python运算符</h2><p>Python语言支持以下类型的运算符:</p>
+<ul>
+<li>算术运算符</li>
+<li>比较(关系)运算符</li>
+<li>赋值运算符</li>
+<li>逻辑运算符</li>
+<li>逻辑运算符</li>
+<li>位运算符</li>
+<li>成员运算符</li>
+<li>身份运算符</li>
+<li>运算符优先级</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="Python算术运算符"><a href="#Python算术运算符" class="headerlink" title="Python算术运算符"></a>Python算术运算符</h3><p>假设存在变量: a=10, b=20:</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td align="left">加 - 两个对象相加</td>
+<td align="left">a + b 输出结果 30</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">减 - 得到负数或是一个数减去另一个数</td>
+<td align="left">a - b 输出结果 -10</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">乘 - 两个数相乘或是返回一个被重复若干次的字符串</td>
+<td align="left">a * b 输出结果 200</td>
+</tr>
+<tr>
+<td align="left">/</td>
+<td align="left">除 - x除以y</td>
+<td align="left">b / a 输出结果 2</td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="left">取模 - 返回除法的余数</td>
+<td align="left">b % a 输出结果 0</td>
+</tr>
+<tr>
+<td align="left">**</td>
+<td align="left">幂 - 返回x的y次幂</td>
+<td align="left">a**b 为10的20次方， 输出结果 100000000000000000000</td>
+</tr>
+<tr>
+<td align="left">//</td>
+<td align="left">取整除 - 返回商的整数部分（向下取整）</td>
+<td align="left"><code>>>>9//2 <br>>4<br>>>>9//2<br>-5</code></td>
+</tr>
+</tbody></table>
+<p>以下实例演示了Python所有算术运算符的操作：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"> </span><br><span class="line">a = <span class="number">21</span></span><br><span class="line">b = <span class="number">10</span></span><br><span class="line">c = <span class="number">0</span></span><br><span class="line"> </span><br><span class="line">c = a + b</span><br><span class="line"><span class="keyword">print</span> <span class="string">"1 - c 的值为："</span>, c</span><br><span class="line"> </span><br><span class="line">c = a - b</span><br><span class="line"><span class="keyword">print</span> <span class="string">"2 - c 的值为："</span>, c </span><br><span class="line"> </span><br><span class="line">c = a * b</span><br><span class="line"><span class="keyword">print</span> <span class="string">"3 - c 的值为："</span>, c </span><br><span class="line"> </span><br><span class="line">c = a / b</span><br><span class="line"><span class="keyword">print</span> <span class="string">"4 - c 的值为："</span>, c </span><br><span class="line"> </span><br><span class="line">c = a % b</span><br><span class="line"><span class="keyword">print</span> <span class="string">"5 - c 的值为："</span>, c</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 修改变量 a 、b 、c</span></span><br><span class="line">a = <span class="number">2</span></span><br><span class="line">b = <span class="number">3</span></span><br><span class="line">c = a**b </span><br><span class="line"><span class="keyword">print</span> <span class="string">"6 - c 的值为："</span>, c</span><br><span class="line"> </span><br><span class="line">a = <span class="number">10</span></span><br><span class="line">b = <span class="number">5</span></span><br><span class="line">c = a//b </span><br><span class="line"><span class="keyword">print</span> <span class="string">"7 - c 的值为："</span>, c</span><br></pre></td></tr></table></figure>
+
+<p>以上实例输出结果:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> - c 的值为： <span class="number">31</span></span><br><span class="line"><span class="number">2</span> - c 的值为： <span class="number">11</span></span><br><span class="line"><span class="number">3</span> - c 的值为： <span class="number">210</span></span><br><span class="line"><span class="number">4</span> - c 的值为： <span class="number">2</span></span><br><span class="line"><span class="number">5</span> - c 的值为： <span class="number">1</span></span><br><span class="line"><span class="number">6</span> - c 的值为： <span class="number">8</span></span><br><span class="line"><span class="number">7</span> - c 的值为： <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：Python2.x 里，整数除整数，只能得出整数。如果要得到小数部分，把其中一个数改成浮点数即可。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span>/<span class="number">2</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1.0</span>/<span class="number">2</span></span><br><span class="line"><span class="number">0.5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span>/float(<span class="number">2</span>)</span><br><span class="line"><span class="number">0.5</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Python比较运算符"><a href="#Python比较运算符" class="headerlink" title="Python比较运算符"></a>Python比较运算符</h3><p>假设存在变量: a=10, b=20:</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">==</td>
+<td align="left">等于 - 比较对象是否相等</td>
+<td align="left">(a == b) 返回 False</td>
+</tr>
+<tr>
+<td align="left">!=</td>
+<td align="left">不等于 - 比较两个对象是否不相等</td>
+<td align="left">(a != b) 返回 true</td>
+</tr>
+<tr>
+<td align="left">&lt;&gt;</td>
+<td align="left">不等于 - 比较两个对象是否不相等</td>
+<td align="left">(a &lt;&gt; b) 返回 true。这个运算符类似 !=</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="left">大于 - 返回x是否大于y</td>
+<td align="left">(a &gt; b) 返回 False</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="left">小于 - 返回x是否小于y所有比较运算符返回1表示真，返回0表示假。这分别与特殊的变量True和False等价</td>
+<td align="left">(a &lt; b) 返回 true</td>
+</tr>
+<tr>
+<td align="left">&gt;=</td>
+<td align="left">大于等于    - 返回x是否大于等于y</td>
+<td align="left">(a &gt;= b) 返回 False</td>
+</tr>
+<tr>
+<td align="left">&lt;=</td>
+<td align="left">小于等于 -    返回x是否小于等于y</td>
+<td align="left">(a &lt;= b) 返回 true</td>
+</tr>
+</tbody></table>
+<p>以下实例演示了Python所有比较运算符的操作：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"> </span><br><span class="line">a = <span class="number">21</span></span><br><span class="line">b = <span class="number">10</span></span><br><span class="line">c = <span class="number">0</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>  a == b :</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"1 - a 等于 b"</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"1 - a 不等于 b"</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>  a != b :</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"2 - a 不等于 b"</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"2 - a 等于 b"</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>  a &lt;&gt; b :</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"3 - a 不等于 b"</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"3 - a 等于 b"</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>  a &lt; b :</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"4 - a 小于 b"</span> </span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"4 - a 大于等于 b"</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>  a &gt; b :</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"5 - a 大于 b"</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"5 - a 小于等于 b"</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 修改变量 a 和 b 的值</span></span><br><span class="line">a = <span class="number">5</span></span><br><span class="line">b = <span class="number">20</span></span><br><span class="line"><span class="keyword">if</span>  a &lt;= b :</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"6 - a 小于等于 b"</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"6 - a 大于  b"</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span>  b &gt;= a :</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"7 - b 大于等于 a"</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> <span class="string">"7 - b 小于 a"</span></span><br></pre></td></tr></table></figure>
+
+<p>以上实例输出结果:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> - a 不等于 b</span><br><span class="line"><span class="number">2</span> - a 不等于 b</span><br><span class="line"><span class="number">3</span> - a 不等于 b</span><br><span class="line"><span class="number">4</span> - a 大于等于 b</span><br><span class="line"><span class="number">5</span> - a 大于 b</span><br><span class="line"><span class="number">6</span> - a 小于等于 b</span><br><span class="line"><span class="number">7</span> - b 大于等于 a</span><br></pre></td></tr></table></figure>
+
+<h3 id="Python赋值运算符"><a href="#Python赋值运算符" class="headerlink" title="Python赋值运算符"></a>Python赋值运算符</h3><p>假设存在变量: a=10, b=20:</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">=</td>
+<td align="left">简单的赋值运算符</td>
+<td align="left">c = a + b 将 a + b 的运算结果赋值为 c</td>
+</tr>
+<tr>
+<td align="left">+=</td>
+<td align="left">加法赋值运算符</td>
+<td align="left">c += a 等效于 c = c + a</td>
+</tr>
+<tr>
+<td align="left">-=</td>
+<td align="left">减法赋值运算符</td>
+<td align="left">c -= a 等效于 c = c - a</td>
+</tr>
+<tr>
+<td align="left">*=</td>
+<td align="left">乘法赋值运算符</td>
+<td align="left">c *= a 等效于 c = c * a</td>
+</tr>
+<tr>
+<td align="left">/=</td>
+<td align="left">除法赋值运算符</td>
+<td align="left">c /= a 等效于 c = c / a</td>
+</tr>
+<tr>
+<td align="left">%=</td>
+<td align="left">取模赋值运算符</td>
+<td align="left">c %= a 等效于 c = c % a</td>
+</tr>
+<tr>
+<td align="left">**=</td>
+<td align="left">幂赋值运算符</td>
+<td align="left">c *<em>= a 等效于 c = c *</em> a</td>
+</tr>
+<tr>
+<td align="left">//=</td>
+<td align="left">取整除赋值运算符</td>
+<td align="left">c //= a 等效于 c = c // a</td>
+</tr>
+</tbody></table>
+<p>以下实例演示了Python所有赋值运算符的操作：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"> </span><br><span class="line">a = <span class="number">21</span></span><br><span class="line">b = <span class="number">10</span></span><br><span class="line">c = <span class="number">0</span></span><br><span class="line"> </span><br><span class="line">c = a + b</span><br><span class="line"><span class="keyword">print</span> <span class="string">"1 - c 的值为："</span>, c</span><br><span class="line"> </span><br><span class="line">c += a</span><br><span class="line"><span class="keyword">print</span> <span class="string">"2 - c 的值为："</span>, c </span><br><span class="line"> </span><br><span class="line">c *= a</span><br><span class="line"><span class="keyword">print</span> <span class="string">"3 - c 的值为："</span>, c </span><br><span class="line"> </span><br><span class="line">c /= a </span><br><span class="line"><span class="keyword">print</span> <span class="string">"4 - c 的值为："</span>, c </span><br><span class="line"> </span><br><span class="line">c = <span class="number">2</span></span><br><span class="line">c %= a</span><br><span class="line"><span class="keyword">print</span> <span class="string">"5 - c 的值为："</span>, c</span><br><span class="line"> </span><br><span class="line">c **= a</span><br><span class="line"><span class="keyword">print</span> <span class="string">"6 - c 的值为："</span>, c</span><br><span class="line"> </span><br><span class="line">c //= a</span><br><span class="line"><span class="keyword">print</span> <span class="string">"7 - c 的值为："</span>, c</span><br></pre></td></tr></table></figure>
+
+<p>以上实例输出结果:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> - c 的值为： <span class="number">31</span></span><br><span class="line"><span class="number">2</span> - c 的值为： <span class="number">52</span></span><br><span class="line"><span class="number">3</span> - c 的值为： <span class="number">1092</span></span><br><span class="line"><span class="number">4</span> - c 的值为： <span class="number">52</span></span><br><span class="line"><span class="number">5</span> - c 的值为： <span class="number">2</span></span><br><span class="line"><span class="number">6</span> - c 的值为： <span class="number">2097152</span></span><br><span class="line"><span class="number">7</span> - c 的值为： <span class="number">99864</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Python位运算符"><a href="#Python位运算符" class="headerlink" title="Python位运算符"></a>Python位运算符</h3><p>按位运算符是把数字看作二进制来进行计算的。Python中的按位运算法则如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">&amp;</td>
+<td align="left">按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0</td>
+<td align="left">(a &amp; b) 输出结果 12 ，二进制解释： 0000 1100</td>
+</tr>
+<tr>
+<td align="left">|</td>
+<td align="left">按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1</td>
+<td align="left">(a | b) 输出结果 61 ，二进制解释： 0011 1101</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">按位异或运算符：当两对应的二进位相异时，结果为1</td>
+<td align="left">(a ^ b) 输出结果 49 ，二进制解释： 0011 0001</td>
+</tr>
+<tr>
+<td align="left">~</td>
+<td align="left">按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1 。~x 类似于 -x-1</td>
+<td align="left">(~a ) 输出结果 -61 ，二进制解释： 1100 0011，在一个有符号二进制数的补码形式</td>
+</tr>
+<tr>
+<td align="left">&lt;&lt;</td>
+<td align="left">左移动运算符：运算数的各二进位全部左移若干位，由 &lt;&lt; 右边的数字指定了移动的位数，高位丢弃，低位补0</td>
+<td align="left">a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000</td>
+</tr>
+<tr>
+<td align="left">&gt;&gt;</td>
+<td align="left">右移动运算符：把”&gt;&gt;”左边的运算数的各二进位全部右移若干位，&gt;&gt; 右边的数字指定了移动的位数</td>
+<td align="left">a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111</td>
+</tr>
+</tbody></table>
+<h3 id="Python逻辑运算符"><a href="#Python逻辑运算符" class="headerlink" title="Python逻辑运算符"></a>Python逻辑运算符</h3><p>假设存在变量: a = 10, b=20:</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">and</td>
+<td align="left">x and y    布尔”与” - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值</td>
+<td align="left">(a and b) 返回 20</td>
+</tr>
+<tr>
+<td align="left">or</td>
+<td align="left">x or y    布尔”或”    - 如果 x 是非 0，它返回 x 的值，否则它返回 y 的计算值</td>
+<td align="left">(a or b) 返回 10</td>
+</tr>
+<tr>
+<td align="left">not</td>
+<td align="left">not x    布尔”非” - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True</td>
+<td align="left">not(a and b) 返回 False</td>
+</tr>
+</tbody></table>
+<h3 id="Python成员运算符"><a href="#Python成员运算符" class="headerlink" title="Python成员运算符"></a>Python成员运算符</h3><p>除了以上的一些运算符之外，Python还支持成员运算符，测试实例中包含了一系列的成员，包括字符串，列表或元组。</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">in</td>
+<td align="left">如果在指定的序列中找到值返回 True，否则返回 False</td>
+<td align="left">x 在 y 序列中 , 如果 x 在 y 序列中返回 True</td>
+</tr>
+<tr>
+<td align="left">not in</td>
+<td align="left">如果在指定的序列中没有找到值返回 True，否则返回 False</td>
+<td align="left">x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True</td>
+</tr>
+</tbody></table>
+<h3 id="Python身份运算符"><a href="#Python身份运算符" class="headerlink" title="Python身份运算符"></a>Python身份运算符</h3><p>身份运算符用于比较两个对象的存储单元</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">is</td>
+<td align="left">is 是判断两个标识符是不是引用自一个对象</td>
+<td align="left">x is y, 类似 id(x) == id(y) , 如果引用的是同一个对象则返回 True，否则返回 False</td>
+</tr>
+<tr>
+<td align="left">is not</td>
+<td align="left">is not 是判断两个标识符是不是引用自不同对象</td>
+<td align="left">x is not y ， 类似 id(a) != id(b)。如果引用的不是同一个对象则返回结果 True，否则返回 False</td>
+</tr>
+</tbody></table>
+<h3 id="Python运算符优先级"><a href="#Python运算符优先级" class="headerlink" title="Python运算符优先级"></a>Python运算符优先级</h3><p>以下表格列出了从最高到最低优先级的所有运算符：</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">**</td>
+<td align="left">指数 (最高优先级)</td>
+</tr>
+<tr>
+<td align="left">~ + -</td>
+<td align="left">按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</td>
+</tr>
+<tr>
+<td align="left">* / % //</td>
+<td align="left">乘，除，取模和取整除</td>
+</tr>
+<tr>
+<td align="left">+ -</td>
+<td align="left">加法减法</td>
+</tr>
+<tr>
+<td align="left">&gt;&gt; &lt;&lt;</td>
+<td align="left">右移，左移运算符</td>
+</tr>
+<tr>
+<td align="left">&amp;</td>
+<td align="left">位 ‘AND’</td>
+</tr>
+<tr>
+<td align="left">^ |</td>
+<td align="left">位运算符</td>
+</tr>
+<tr>
+<td align="left">&lt;= &lt; &gt; &gt;=</td>
+<td align="left">比较运算符</td>
+</tr>
+<tr>
+<td align="left">&lt;&gt; == !=</td>
+<td align="left">等于运算符</td>
+</tr>
+<tr>
+<td align="left">= %= /= //= -= += <em>= *</em>=</td>
+<td align="left">赋值运算符</td>
+</tr>
+<tr>
+<td align="left">is is not</td>
+<td align="left">身份运算符</td>
+</tr>
+<tr>
+<td align="left">in not in</td>
+<td align="left">成员运算符</td>
+</tr>
+<tr>
+<td align="left">not and or</td>
+<td align="left">逻辑运算符</td>
+</tr>
+</tbody></table>
+
+    
+
+    
+
+    
+      <div> 
+        <ul class="post-copyright">
+          <li>
+            <strong>本文作者：</strong>
+            Johnny
+          </li>
+          <li>
+            <strong>本文链接：</strong>
+            <a href="https://rememorymoonlightshadow.github.io/2019/09/03/Python基础(中)/" title="Python基础(中)" target="_blank">https://rememorymoonlightshadow.github.io/2019/09/03/Python基础(中)/</a>
+          </li>
+          <li>
+            <strong>版权声明： </strong>
+            本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+          </li>
+        </ul>
+      </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
+        			<a href="/categories/学习//" class="article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://rememorymoonlightshadow.github.io/2019/09/03/Python基础(中)/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/14/两数之和/" class="archive-article-date">
-        <time datetime="2019-08-14T10:04:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
-</a>
 
+
+<nav id="article-nav">
+  
+    <a href="/2019/09/03/Python基础(下)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python基础(下)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello Hexo World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	      <a class="archive-article-title" href="/2019/08/14/两数之和/">两数之和</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Python运算符"><span class="toc-number">1.</span> <span class="toc-text">Python运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Python算术运算符"><span class="toc-number">1.1.</span> <span class="toc-text">Python算术运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python比较运算符"><span class="toc-number">1.2.</span> <span class="toc-text">Python比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python赋值运算符"><span class="toc-number">1.3.</span> <span class="toc-text">Python赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python位运算符"><span class="toc-number">1.4.</span> <span class="toc-text">Python位运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python逻辑运算符"><span class="toc-number">1.5.</span> <span class="toc-text">Python逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python成员运算符"><span class="toc-number">1.6.</span> <span class="toc-text">Python成员运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python身份运算符"><span class="toc-number">1.7.</span> <span class="toc-text">Python身份运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python运算符优先级"><span class="toc-number">1.8.</span> <span class="toc-text">Python运算符优先级</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div id="gitalk-container" style="padding: 0 30px !important;min-height: 20px;"></div>
+    <script type="text/javascript">
+        const gitalk = new Gitalk({
+            clientID: 'c99126002fbfbc887a21',
+            clientSecret: '78b9eba316b573cae4e28b992b979759b62e81b1',
+            repo: 'Blog-Comment-Repo',
+            owner: 'RememoryMoonLightShadow',
+            admin: ['RememoryMoonLightShadow'],
+            id: decodeURI( md5( location.href.trimEnd('') ) ),
+            distractionFreeMode: 'true'
+        })
+ 
+        gitalk.render('gitalk-container')
+    </script>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/14/无重复最长子串/" class="archive-article-date">
-        <time datetime="2019-08-14T10:04:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	      <a class="archive-article-title" href="/2019/08/14/无重复最长子串/">无重复最长子串</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/08/14/两数相加/" class="archive-article-date">
-        <time datetime="2019-08-14T10:04:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	      <a class="archive-article-title" href="/2019/08/14/两数相加/">两数相加</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-
-
           </div>
         </div>
       </div>
@@ -485,10 +832,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
