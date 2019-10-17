@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://rememorymoonlightshadow.github.io">
-  <title>categories | Remember</title>
+  <title>Python-Django之跨域 | Remember</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://rememorymoonlightshadow.github.io/categories/index.html">
+  <meta name="description" content="Django的跨域请求由于目前需要客户端和服务端的工作分离,会涉及到跨域请求的访问,因此,在Django项目中需要开启跨域访问. 首先安装  django-cors-headers    1pip install django-cors-headers">
+<meta name="keywords" content="学习,Python,Django">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python-Django之跨域">
+<meta property="og:url" content="https://rememorymoonlightshadow.github.io/2019/10/17/Python-Django之跨域/index.html">
 <meta property="og:site_name" content="Remember">
+<meta property="og:description" content="Django的跨域请求由于目前需要客户端和服务端的工作分离,会涉及到跨域请求的访问,因此,在Django项目中需要开启跨域访问. 首先安装  django-cors-headers    1pip install django-cors-headers">
 <meta property="og:locale" content="en|zh-CN|zh-TW">
-<meta property="og:updated_time" content="2019-08-15T01:02:34.508Z">
+<meta property="og:updated_time" content="2019-10-17T03:18:05.974Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="Python-Django之跨域">
+<meta name="twitter:description" content="Django的跨域请求由于目前需要客户端和服务端的工作分离,会涉及到跨域请求的访问,因此,在Django项目中需要开启跨域访问. 首先安装  django-cors-headers    1pip install django-cors-headers">
   
     <link rel="alternative" href="/atom.xml" title="Remember" type="application/atom+xml">
   
@@ -198,14 +202,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="categories-" class="article article-type-categories " itemscope itemprop="blogPost">
+            <article id="post-Python-Django之跨域" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      categories
+      Python-Django之跨域
     </h1>
   
 
@@ -217,8 +221,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/categories/index.html" class="archive-article-date">
-        <time datetime="2019-08-14T10:16:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-14</time>
+<a href="/2019/10/17/Python-Django之跨域/" class="archive-article-date">
+        <time datetime="2019-10-17T03:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
 </a>
 
   
@@ -231,7 +235,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">0字</span>
+      <span class="post-count">100字</span>
     </span>
   </span>
 
@@ -251,18 +255,82 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    
-    
+    <h2 id="Django的跨域请求"><a href="#Django的跨域请求" class="headerlink" title="Django的跨域请求"></a>Django的跨域请求</h2><pre><code>由于目前需要客户端和服务端的工作分离,会涉及到跨域请求的访问,因此,在Django项目中需要开启跨域访问.</code></pre><ul>
+<li>首先安装 <kbd> django-cors-headers  </kbd></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install django-cors-headers</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<ul>
+<li>然后修改 <kbd> settings.py </kbd></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">INSTALLED_APPS = [</span><br><span class="line">    ......</span><br><span class="line">    <span class="string">'corsheaders'</span>,</span><br><span class="line">    ......</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">MIDDLEWARE = [</span><br><span class="line">    ......</span><br><span class="line">    <span class="string">'corsheaders.middleware.CorsMiddleware'</span>,</span><br><span class="line">    <span class="string">'django.middleware.common.CommonMiddleware'</span>,</span><br><span class="line">    ......</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">CORS_ORIGIN_ALLOW_ALL = <span class="literal">True</span></span><br><span class="line">CORS_ALLOW_CREDENTIALS = <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>启动服务</p>
+<p>Note: 本文借鉴自 <a href="https://www.jianshu.com/p/24945ee1ec05" target="_blank" rel="noopener"> Django设置允许跨域访问 </a></p>
+</li>
+</ul>
 
     
 
+    
+
+    
+      <div> 
+        <ul class="post-copyright">
+          <li>
+            <strong>本文作者：</strong>
+            Johnny
+          </li>
+          <li>
+            <strong>本文链接：</strong>
+            <a href="https://rememorymoonlightshadow.github.io/2019/10/17/Python-Django之跨域/" title="Python-Django之跨域" target="_blank">https://rememorymoonlightshadow.github.io/2019/10/17/Python-Django之跨域/</a>
+          </li>
+          <li>
+            <strong>版权声明： </strong>
+            本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+          </li>
+        </ul>
+      </div>
     
 
   </div>
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Django</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/学习//" class="article-tag-list-link color3">学习</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
     
 
@@ -312,7 +380,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://rememorymoonlightshadow.github.io/categories/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://rememorymoonlightshadow.github.io/2019/10/17/Python-Django之跨域/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -324,6 +392,16 @@
   </div>
 </article>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/03/Python基础(下)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python基础(下)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 <aside class="wrap-side-operation">
@@ -338,6 +416,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Django的跨域请求"><span class="toc-number">1.</span> <span class="toc-text">Django的跨域请求</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -410,7 +501,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
